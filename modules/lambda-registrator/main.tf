@@ -1,15 +1,15 @@
 # Copyright (c) HashiCorp, Inc.
 # SPDX-License-Identifier: MPL-2.0
 
-terraform {
-  required_providers {
-    docker = {
-      source  = "kreuzwerker/docker"
-      version = "3.0.2"
-    }
+# terraform {
+#   required_providers {
+#     docker = {
+#       source  = "kreuzwerker/docker"
+#       version = "3.0.2"
+#     }
 
-  }
-}
+#   }
+# }
 
 locals {
   on_vpc = length(var.subnet_ids) > 0 && length(var.security_group_ids) > 0
